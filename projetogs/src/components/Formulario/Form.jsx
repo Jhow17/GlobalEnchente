@@ -8,25 +8,29 @@ const Form = (props) => {
     const [fnome, setFNome] = useState('')
     const [lnome, setLNome] = useState('')
     const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
     const aoSalvar = (e) =>{
         e.preventDefault()
         props.aoClienteCadastrado({
             fnome,
             lnome,
-            email
+            email,
+            senha
         })
     }
 
   return (
     <>
-        <form onSubmit={aoSalvar}>
-            <div class="mb-3">
+        <form className="w-full  max-w-lg bg-white p-8 shadow-2x1 rounded-xl space-y-6" onSubmit={aoSalvar}>
                 <CampoForm tipo='text' nome='First Name' valor={fnome} aoAlterado={valor => setFNome(valor)} />
                 <CampoForm tipo='text' nome='Last Name' valor={lnome} aoAlterado={ valor => setLNome(valor)} />
                 <CampoForm tipo='email' nome='E-Mail' valor={email} aoAlterado={valor => setEmail(valor)} />
-                <Butao nome='Cadastrar'/>
-            </div>
-            
+                <CampoForm tipo='password' nome='Senha' valor={senha} aoAlterado={valor => setSenha(valor)} />
+                <div className='pt-4'>
+                    <Butao nome='Cadastrar'/>
+
+                </div>
+                
         </form>
     </>
 

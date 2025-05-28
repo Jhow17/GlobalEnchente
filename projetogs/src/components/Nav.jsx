@@ -33,10 +33,10 @@ const Nav = () => {
                             <HashLink className="nav-link" smooth to="/#solucao">Solução</HashLink>
                         </li>
                         <li className="nav-item mr-5">
-                            <HashLink className="nav-link" smooth to="/#login">Login</HashLink>
+                            <HashLink className="nav-link" smooth to="/#cadastrar">Cadastrar</HashLink>
                         </li>
                         <li className="navbar-brand">
-                            <Link className="nav-link" to="/cadastrar">Cadastrar</Link>
+                            <Link className="nav-link" to="/login">Login</Link>
                         </li>
                  </ul>
             </div>

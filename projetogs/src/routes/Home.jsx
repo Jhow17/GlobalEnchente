@@ -3,7 +3,7 @@ import Nav from '../components/Nav'
 
 const Home = () => {
   return (
-     <section  id='home'>Cadastrar</section>
+     <section className='h-1/2 w-full bg-indigo-500' id='home'>Home</section>
   )
 
 }

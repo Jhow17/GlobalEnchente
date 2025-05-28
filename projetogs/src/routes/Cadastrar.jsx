@@ -14,7 +14,10 @@ const Cadastrar = () => {
   
   return (
     <>
-      <section className='w-full h-full flex flex-col justify-center items-center'>
+      <section id='cadastrar' className='h-auto w-full bg-gray-50 py-2 lg:py-20 flex flex-col items-center justify-center'>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Entre em Contato</h2>
+        </div>
         <Form aoClienteCadastrado={cliente => aoNovoCliente(cliente)}/>
       </section>
     </>
