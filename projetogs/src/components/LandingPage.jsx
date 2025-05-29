@@ -9,7 +9,7 @@ import Error from '../routes/Error.jsx';
 const LandingPage = () => {
   return (
     <div>
-      <main className='container'>
+      <main className='container-fluid p-0'>
         {/* cada um desses vai ser uma secao da landing page */}
         <Home />
         <Sobre />

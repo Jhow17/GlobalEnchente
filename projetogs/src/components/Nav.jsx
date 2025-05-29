@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-                <HashLink className="navbar-brand" smooth to="/#home">
+    <nav className="navbar navbar-expand-lg bg-gray-900">
+        <div className="container-fluid ">
+                <HashLink className="navbar-brand  text-white" smooth to="/#home">
 
                     <img src="./public/satelite-de-sinal.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
                         Alerta Enchentes
@@ -23,20 +23,20 @@ const Nav = () => {
                 <div className="navbar-collapse mr-8 w-md" id="navbarNav">
 
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
-                        <li className="nav-item mr-5">
-                            <HashLink className="nav-link" smooth to="/#home" > Home</HashLink>
+                        <li className="nav-item mr-5 text-lg">
+                            <HashLink className="nav-link  text-white" smooth to="/#home" > Home</HashLink>
                         </li>
-                        <li className="nav-item mr-5">
-                            <HashLink className="nav-link" smooth to="/#sobre">Sobre</HashLink>
+                        <li className="nav-item mr-5 text-lg">
+                            <HashLink className="nav-link  text-white" smooth to="/#sobre">Sobre</HashLink>
                         </li>
-                        <li className="nav-item mr-5">
-                            <HashLink className="nav-link" smooth to="/#solucao">Solução</HashLink>
+                        <li className="nav-item mr-5 text-lg">
+                            <HashLink className="nav-link  text-white" smooth to="/#solucao">Solução</HashLink>
                         </li>
-                        <li className="nav-item mr-5">
-                            <HashLink className="nav-link" smooth to="/#cadastrar">Cadastrar</HashLink>
+                        <li className="nav-item mr-5 text-lg">
+                            <HashLink className="nav-link  text-white" smooth to="/#cadastrar">Cadastrar</HashLink>
                         </li>
-                        <li className="navbar-brand">
-                            <Link className="nav-link" to="/login">Login</Link>
+                        <li className="navbar-brand  text-white">
+                            <Link className="nav-link text-3xl text-white" to="/login">Login</Link>
                         </li>
                  </ul>
             </div>
