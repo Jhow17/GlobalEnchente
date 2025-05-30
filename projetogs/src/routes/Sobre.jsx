@@ -12,15 +12,15 @@ const Sobre = () => {
           <div className='relative'> 
             <div className='relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-xl'> 
               <img 
-                className='w-full h-full object-cover hover:scale-105 duration-300 transition-transform ease-in-out' // object-cover para preencher
-                src="/sobre_enchentes.png" // Caminho corrigido
+                className='w-full h-full object-cover hover:scale-105 duration-300 transition-transform ease-in-out' 
+                src="/sobre_enchentes.png" 
                 alt="Pessoas em área alagada após enchente" 
               />
             </div>
             <div className='absolute w-32 h-32 sm:w-40 sm:h-40 -right-4 -bottom-4 sm:right-2 sm:bottom-2 rounded-2xl border-4 border-white overflow-hidden shadow-lg'> 
               <img 
                 className='w-full h-full object-cover hover:scale-105 duration-300 transition-transform ease-in-out' 
-                src="/sobre2.png" // Caminho corrigido
+                src="/sobre2.png" 
                 alt="Detalhe da enchente" 
               />
             </div>
@@ -29,7 +29,7 @@ const Sobre = () => {
         
           <div className='space-y-6'>
             <h2 className='text-3xl sm:text-4xl font-bold text-gray-800'> 
-              Sobre o Impacto das Enchentes
+              Impacto das Enchentes
             </h2>
             <p className='text-gray-600 leading-relaxed'> 
               Esta imagem retrata um bairro de baixa renda após uma enchente severa. A devastação causada pelas enchentes na vida das pessoas é evidente, com casas danificadas e pertences espalhados pelas ruas. As pessoas caminham pela água turva, com os rostos marcados pela preocupação e exaustão, enquanto carregam o que conseguiram salvar de suas casas inundadas. Um jovem hispânico carrega um colchão encharcado nas costas enquanto caminha por uma rua cheia de escombros. A fotografia captura um sentimento de desespero, com foco no custo emocional e físico que as enchentes impõem às populações vulneráveis. A água lamacenta e os escombros refletem a intensidade do desastre. A foto foi concebida para retratar um sentimento de crise, transmitindo a destruição generalizada e o custo humano das enchentes.
