@@ -5,6 +5,12 @@ import { CampoForm } from '../components/Formulario/CampoForm'
 
 
 const Cadastrar = () => {
+  const [mensagem, setMensagem] = useState('')
+  const aoDigitado = (e) => {
+    setMensagem(e.target.value)
+
+  }
+
   const [clientes, setClientes] = useState([])
   const aoNovoCliente = (cliente) =>{
     setClientes([...clientes, cliente])
@@ -19,9 +25,9 @@ const Cadastrar = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Entre em Contato</h2>
         </div>
-        <Form aoClienteCadastrado={cliente => aoNovoCliente(cliente)}>
+        <Form aoClienteCadastrado={cliente => aoNovoCliente(cliente)} textMsg={mensagem}>
           <div className="form-floating mt-4">
-            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <textarea value={mensagem} onChange={aoDigitado} className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">Comments</label>
           </div>
         </Form>

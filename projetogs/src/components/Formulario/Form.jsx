@@ -1,10 +1,10 @@
-import React, { Children, useState } from 'react'
+import React, {  useState } from 'react'
 import { CampoForm } from './CampoForm'
 import Butao from './Butao'
 
 
 
-const Form = (props) => {
+const Form = (props ) => {
     const [fnome, setFNome] = useState('')
     const [lnome, setLNome] = useState('')
     const [email, setEmail] = useState('')
@@ -15,7 +15,8 @@ const Form = (props) => {
             fnome,
             lnome,
             email,
-            senha
+            senha,
+            mensagem : props.textMsg
         })
     }
 
