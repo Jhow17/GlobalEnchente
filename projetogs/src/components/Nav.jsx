@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-gray-900">
+    <nav className="navbar-dark navbar-expand-lg bg-gray-900">
         <div className="container-fluid ">
                 <HashLink className="navbar-brand  text-white" smooth to="/#home">
-
                     <img src="./public/satelite-de-sinal.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
                         Alerta Enchentes
                 </HashLink>
@@ -20,10 +19,10 @@ const Nav = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 ><span className="navbar-toggler-icon"></span></button>
-                <div className="navbar-collapse mr-8 w-md" id="navbarNav">
+                <div className="navbar-collapse" id="navbarNav">
 
-                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
-                        <li className="nav-item mr-5 text-lg">
+                    <ul className="navbar-nav lg:mx-auto ms-lg-auto mb-2 mb-lg-0">
+                        <li className="nav-item text-lg lg:mr-3">
                             <HashLink className="nav-link  text-white" smooth to="/#home" > Home</HashLink>
                         </li>
                         <li className="nav-item mr-5 text-lg">

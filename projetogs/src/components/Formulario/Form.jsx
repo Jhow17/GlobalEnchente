@@ -9,15 +9,29 @@ const Form = (props ) => {
     const [lnome, setLNome] = useState('')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
+    const [erros,setErros] = useState({})
+    
     const aoSalvar = (e) =>{
         e.preventDefault()
-        props.aoClienteCadastrado({
-            fnome,
+        const Erros = { }
+        if(!fnome.trim()) Erros.fnome = "O nome é obrigatorio"
+        if(!email.trim()) Erros.email = "O E-mail é obrigatorio"
+        
+        setErros(Erros)
+        if (Object.keys(Erros).length > 0 ){
+            return 
+        }
+
+        props.aoClienteCadastrado(
+            {fnome,
             lnome,
             email,
             senha,
-            mensagem : props.textMsg
-        })
+            mensagem : props.textMsg})
+        setFNome('');
+        setLNome('');
+        setEmail('');
+        setSenha('');
     }
 
   return (
