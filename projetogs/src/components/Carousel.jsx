@@ -19,8 +19,9 @@ const Carousel = ({slides}) => {
         <div className={`flex transition ease-out duration-800`}
         style={{transform: `translateX(-${current * 100}%)`}}>
             {slides.map((s, i) => {
-                return <div key={i} className='w-full flex-shrink-0 px-16 py-2 bg-indigo-400 text-white rounded-md min-h-[200px] flex flex-col justify-center items-center text-left'>
-                    <h4 className='text-3xl font-bold sm:text-4xl mb-auto'>{s.titulo}</h4>
+                return <div key={i} className='w-full flex-shrink-0 px-16 py-2 bg-indigo-800 text-white rounded-md min-h-[200px] flex flex-col justify-center items-center text-left'>
+                    <h4 className='text-3xl font-bold sm:text-4xl mb-10'>{s.titulo}</h4>
+                    <hr className='text-white' />
                     <p className='text-base leading-relaxed'>{s.conteudo}</p>
                 </div>
             })}

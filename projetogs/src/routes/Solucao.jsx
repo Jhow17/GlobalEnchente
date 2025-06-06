@@ -8,7 +8,7 @@ const solucoes = [
   },
   {
     titulo: "Monitoramento Avançado com IA e Satélites",
-    conteudo: "Utilizamos dados de satélites de observação da Terra (como CBERS e Sentinel) integrados a um robusto banco de dados georreferenciado. Algoritmos de Inteligência Artificial analisam essas informações continuamente para detectar e prever riscos de enchentes com maior precisão e antecedência, possibilitando uma resposta mais rápida e eficaz das autoridades e da população."
+    conteudo: "Utilizamos dados de cube satélites de observação da Terra integrados a um robusto banco de dados georreferenciado. Algoritmos de Inteligência Artificial analisam essas informações continuamente para detectar e prever riscos de enchentes com maior precisão e antecedência, possibilitando uma resposta mais rápida e eficaz das autoridades e da população."
   },
   {
     titulo: "Comunidade Conectada e Engajada", // Título levemente ajustado
@@ -22,19 +22,32 @@ const solucoes = [
 
 const Solucao = () => {
   return (
-     <section className='bg-blue-50 py-16 lg:py-24 '  id='solucao'>
+     <section className='bg-indigo-50 py-16 lg:py-24 '  id='solucao'>
 
-       <div className="text-center mb-10 md:mb-16 px-4">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
-             Soluções 
+       <div className="text-left mb-10 md:mb-16 px-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center">
+             Nosso Projeto 
         </h2>
          <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Veja como nossa tecnologia inovadora pode fazer a diferença na prevenção e resposta a enchentes.
+            Veja como nossa solução inovadora pode fazer a diferença na resposta a enchentes.
         </p>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
+          <div className='relative'>
+            <div className='relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-xl'>
+              <img className='w-full h-full object-containt-scale-100  ease-in-out' src="public/Screenshot_20250606_190641_ReadEra[1].jpg" alt="" />
+            </div>
+          </div>
+          <div className='relative'>
+            <div className='relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-xl'>
+              <iframe className='w-full h-full object-containt-scale-100  ease-in-out' width="560" height="315" src="https://www.youtube.com/embed/1C-BN0NHP_A?si=NGlraQRUYdvGf2N7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center'> 
         <Carousel slides={solucoes}/>
       </div>
+
       </section>
   )
 }

@@ -3,6 +3,7 @@ import Home from '../routes/Home.jsx';
 import Sobre from '../routes/Sobre.jsx';
 import Solucao from '../routes/Solucao.jsx';
 import Cadastrar from '../routes/Cadastrar.jsx';
+import Footer from './Footer.jsx';
 import Error from '../routes/Error.jsx';
 
 
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <Sobre />
         <Solucao />
         <Cadastrar/>
+        <Footer/>
       </main>
     </div>
   )
